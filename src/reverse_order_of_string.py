@@ -14,12 +14,12 @@ def reverse_order(word):
         end_to_init -= 1
 
 
-def convert_in_string(word_in_array):
-    word_already_reversed = ''
-    return word_already_reversed.join(word_in_array)
+def convert_in_string(array_of_chars):
+    string = ''
+    return string.join(array_of_chars)
 
 
-def convert_in_array_of_chars(word):
-    word_in_array = []
-    word_in_array.extend(word)
-    return word_in_array
+def convert_in_array_of_chars(string):
+    array_of_chars = []
+    array_of_chars.extend(string)
+    return array_of_chars
