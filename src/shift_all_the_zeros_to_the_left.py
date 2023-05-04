@@ -1,4 +1,3 @@
-
 def move_zeros_to_the_left(array):
     index = 0
     zeros_in_array_index = 0
@@ -9,16 +8,12 @@ def move_zeros_to_the_left(array):
             array[index] = array[zeros_in_array_index]
             array[zeros_in_array_index] = 0
 
-            if is_zero_already(array[0]):
+            if is_zero(array[zeros_in_array_index]):
                 zeros_in_array_index += 1
 
         index += 1
 
     return array
-
-
-def is_zero_already(number):
-    return number == 0
 
 
 def is_zero(number):
